@@ -1,0 +1,75 @@
+<app-header></app-header>
+<br><br>
+  <div class="nav-scroller bg-white shadow-sm" style="margin-top: 10px;">
+    <nav class="nav nav-underline">
+      <a class="nav-link active" [routerLink] = "['/user']" >Профиль</a>
+      <a class="nav-link" href="#">
+        Объявления
+        <span class="badge badge-pill bg-light align-text-bottom">2</span>
+      </a>
+      
+      <a class="nav-link" [routerLink] = "['/ad']">Создать новое</a>
+    </nav>
+  </div>
+
+
+<form class="was-validated" style="margin-top: 20px;">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <br> <h4> Создание объявления</h4>
+               
+            <p>Выберите вид животного</p>
+            <div class="form-group">
+                <select class="custom-select" required>
+                  <option value="">Не выбрано</option>
+                  <option value="1">Собаки</option>
+                  <option value="2">Кошки</option>
+                  <option value="3">Попугаи</option>
+                </select>
+                <div class="invalid-feedback">Выберите вид животного</div>
+              </div>
+    
+    
+            <label for="validationTextarea">Заголовок объявления</label>
+            <input class="form-control is-invalid" id="validationTextarea" placeholder="Той-терьер" required>
+            <div class="invalid-feedback">
+              Обязательно введите заголовок (например: Той-терьер)
+            </div>
+    
+            <label for="validationTextarea">Описание</label>
+            <textarea class="form-control is-invalid" id="validationTextarea" placeholder="" required></textarea>
+            <div class="invalid-feedback">
+              Обязательно напишите описание (например: Девочка Той-терьер ждет..)
+            </div>
+    
+            <label for="validationTextarea">Адрес</label>
+            <input class="form-control is-invalid" id="validationTextarea" placeholder="Адрес" required>
+            <div class="invalid-feedback">
+              Обязательно укажите адрес (например: г.Москва)
+            </div>
+    
+            <label for="validationTextarea">Цена</label>
+            <input class="form-control is-invalid" id="validationTextarea" placeholder="2 500" required>
+         
+      
+            <p style="margin: 4px 0;">Фотография</p>
+            <div class="custom-file">
+               
+                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Выберите файл...</label>
+                
+              </div>
+
+              <label for="validationTextarea" style="margin: 6px 0;">Ссылка с YouTube</label>
+              <input class="form-control is-invalid" id="validationTextarea" placeholder="http:" >
+    
+              <div class="custom-control custom-checkbox mb-3" style="margin-top:5px;">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                <label class="custom-control-label" for="customControlValidation1">Согласен с обработкой персональных данных</label>
+              </div>  
+              <button type="button" class="btn btn-secondary btn-lg btn-block btn btn-success" style=" margin-bottom: 30px;">Выставить</button>
+    </div>
+    </div>
+    </div>
+    </form>

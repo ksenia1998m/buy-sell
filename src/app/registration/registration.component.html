@@ -1,0 +1,80 @@
+
+<br><br>
+<br><br>
+<form class="was-validated" style="margin-top: 20px;"  [formGroup]="form">
+  <div class="container">
+  <div class="row">
+      <div class="col-md-12">
+        <div style="text-align: center;">
+        <h1 class="h3 mb-3 font-weight-normal">Регистрация</h1>
+        <p>Заполните форму для регистрации!</p>
+             </div>
+         
+  
+  
+          <label for="validationTextarea">Введите фамилию</label>
+          <input formControlName="surname" class="form-control is-invalid" id="validationTextarea" placeholder="Иванов" type="text" required>
+          <div class="invalid-feedback">
+            Поле обязательное для заполения
+          </div>
+          
+          <label for="validationTextarea">Введите имя</label>
+          <input formControlName="name" class="form-control is-invalid" id="validationTextarea" placeholder="Иван" type="text" required>
+          <div class="invalid-feedback">
+            Поле обязательное для заполения
+          </div>
+        
+          
+          <label for="validationTextarea">Введите отчество</label>
+          <input formControlName="patronymic" class="form-control is-invalid" id="validationTextarea" placeholder="Иванович" type="text">
+          <div class="invalid-feedback">
+            Поле не обязательное для заполения
+          </div>
+  
+  
+          <p>Выберите тип объявления</p>
+          <div class="form-group">
+              <select formControlName="id_ad_type" class="custom-select" required>
+                <option value="">Не выбрано</option>
+                <option value="1">Частное</option>
+                <option value="2">Заводчик</option>
+              </select>
+            </div>
+
+            <label for="validationTextarea">Введите номер телефона</label>
+            <input formControlName="phone" class="form-control is-invalid" id="validationTextarea" placeholder="+ 7 (999) 999 99 99" type="phone" required>
+            <div class="invalid-feedback">
+              Поле обязательное для заполения
+            </div>
+
+            <label for="validationTextarea">Email</label>
+            <input formControlName="email" class="form-control is-invalid" id="validationTextarea" placeholder="" type="email" required>
+            <div class="invalid-feedback">
+              Поле обязательное для заполения
+            </div>
+
+            <label for="validationTextarea">Введите пароль</label>
+            <input formControlName="password" class="form-control is-invalid" id="validationTextarea" placeholder="password" type="password" required>
+            <div class="invalid-feedback">
+              Поле обязательное для заполения
+            </div>
+
+            <div *ngIf="!existEmail" class="attention">
+              <span>Такой Email уже существует!</span>
+            </div>
+            <div *ngIf="!isEmpty" class="attention">
+              <span class="field-required">Одно или несколько полей пустые!</span>
+            </div>
+           
+            <div class="custom-control custom-checkbox mb-3" style="margin-top:5px;">
+              <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+              <label class="custom-control-label" for="customControlValidation1">Согласен с обработкой персональных данных</label>
+            </div>  
+            <button (click)="onRegistr()" id="btnEmail" class="btn btn-lg btn-primary btn-block" type="submit" [routerLink] = "['/authorization']">Сохранить</button>
+            <hr>
+            <div style="text-align: center;">
+                 <a href="" style="color: red; " [routerLink] = "['/authorization']"> <code>Вы уже зарегистрированы?</code></a>
+            
+              <br> <br> <br> <br> <br> <br>
+  </div> </div> </div> </div> 
+  </form>

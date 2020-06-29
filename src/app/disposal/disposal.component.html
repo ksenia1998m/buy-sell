@@ -1,0 +1,103 @@
+<app-header></app-header>
+<br><br>
+<div class="nav-scroller bg-white shadow-sm" style="margin-top: 10px;">
+    <nav class="nav nav-underline">
+        <a class="nav-link active" [routerLink]="['/user']">Профиль</a>
+        <a class="nav-link" [routerLink]="['/disposal']">Объявления
+            <span class="badge badge-pill bg-light align-text-bottom">2</span>
+        </a>
+        <a class="nav-link" [routerLink]="['/ad']">Создать новое</a>
+    </nav>
+</div>
+
+
+<div class="container" style="margin-top: 30px;">
+    <div class="row">
+        <!-- Блок для просмотра объявления в странице home -->
+        <div class="col-md-6 edit" style="margin: 15px 0;">
+            <div class="card mb-6 shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center"
+                        style=" margin-top: 10px;">
+                        <small class="text-muted">Статус: В обработке</small>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger btn-outline-secondar">Удалить</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/sredsob1.jpg" width="100%" height="300">
+                <div class="card-body">
+                    <h2>Название</h2>
+                    <p class="card-text">Чудесные щенки в добрые заботливые руки. Доставка к дому.</p>
+                    <p class="card-text">г. Москва</p>
+                    <h6>55 000 руб.</h6><br>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-success btn-outline-secondar"
+                                [routerLink]="['/details']">Контакты</button>
+                        </div>
+                        <small class="text-muted">9 минут назад</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Блок для просмотра объявления в странице home -->
+<div class="col-md-6 edit" style="margin: 15px 0;">
+    <div class="card mb-6 shadow-sm">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center"
+                style=" margin-top: 10px;">
+                <small class="text-muted">Статус: Одобрен</small>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger btn-outline-secondar">Удалить</button>
+                </div>
+            </div>
+        </div>
+        <img src="assets/sredsob1.jpg" width="100%" height="300">
+        <div class="card-body">
+            <h2>Название</h2>
+            <p class="card-text">Чудесные щенки в добрые заботливые руки. Доставка к дому.</p>
+            <p class="card-text">г. Москва</p>
+            <h6>55 000 руб.</h6><br>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success btn-outline-secondar"
+                        [routerLink]="['/details']">Контакты</button>
+                </div>
+                <small class="text-muted">9 минут назад</small>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Блок для просмотра объявления в странице home -->
+<div class="col-md-6 edit" style="margin: 15px 0;">
+    <div class="card mb-6 shadow-sm">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center"
+                style=" margin-top: 10px;">
+                <small class="text-muted">Статус: Отклонен</small>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger btn-outline-secondar">Удалить</button>
+                </div>
+            </div>
+        </div>
+        <img src="assets/sredsob1.jpg" width="100%" height="300">
+        <div class="card-body">
+            <h2>Название</h2>
+            <p class="card-text">Чудесные щенки в добрые заботливые руки. Доставка к дому.</p>
+            <p class="card-text">г. Москва</p>
+            <h6>55 000 руб.</h6><br>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-success btn-outline-secondar"
+                        [routerLink]="['/details']">Контакты</button>
+                </div>
+                <small class="text-muted">9 минут назад</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+    </div>
+</div>

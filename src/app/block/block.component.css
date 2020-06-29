@@ -15,10 +15,6 @@
 
 }
 
-p{
-    margin-bottom: 3px;
-}
-
-input{
-    margin-bottom: 3px;
+p[_ngcontent-mlg-c3] {
+    margin-bottom: 13px;
 }

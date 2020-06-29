@@ -1,0 +1,43 @@
+
+<br><br>
+<br><br>
+
+<form class="form-signin" [formGroup]="form">
+    <div class="text-center mb-4">
+      <img class="mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Авторизация</h1>
+      <p>Выполните ход для работы с системой!</p>
+    </div>
+  
+    <div class="form-label-group">
+      <label for="inputEmail">Электронная почта</label>
+      <input formControlName="email" type="email" id="inputEmail" class="form-control" placeholder="email" required autofocus>
+      
+    </div>
+  <br>
+    <div class="form-label-group">
+      <label for="inputEmail">Пароль</label>
+      <input formControlName="password" type="password" id="inputPassword" class="form-control" placeholder="password" required>
+    </div>
+    <br>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Запомнить меня
+      </label>
+    </div>
+    <div *ngIf="!notExistLoginOrPassword" class="attention">
+      <span>Неправильный логин или пароль!</span>
+    </div>
+    <div *ngIf="!isEmpty" class="attention">
+      <span class="field-required">Одно или несколько полей пустые!</span>
+    </div>
+
+
+    <button (click)="onEmail()" id="btnEmail" class="btn btn-lg btn-primary btn-block" type="submit" [routerLink] = "['/user']">Вход</button>
+<hr>
+<div style="text-align: center;">
+     <a href="" style="color: red; " [routerLink] = "['/registration']"> <code>Еще не зарегистрировались?</code></a><br>
+     <a href="" style="color: blue; "> <code>Забыли пароль?  </code></a>
+</div>
+  </form>
+  <br> <br> <br> <br> <br> <br>
