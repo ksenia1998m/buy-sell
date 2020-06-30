@@ -1,0 +1,15 @@
+@media print {
+	.card {
+	width: 100%;
+    }
+    
+    .card-header {
+        display: none;
+        }
+
+        .card-footer {
+            display: none;
+            }
+    }
+    
+ 

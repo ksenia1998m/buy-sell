@@ -22,3 +22,9 @@ p{
 input{
     margin-bottom: 3px;
 }
+
+@media print {
+	footer {
+	display: none;
+	}
+	}
